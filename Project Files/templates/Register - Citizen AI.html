@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0238)file:///C:/Users/Ramya/AppData/Local/Temp/21b17efc-7d86-4e3b-aa9d-6560b13e6be3_Citizen-AI-Intelligent-Citizen-Engagement-Platform-main.zip.be3/Citizen-AI-Intelligent-Citizen-Engagement-Platform-main/Project%20Files/templates/register.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Citizen AI</title>
+    <link rel="stylesheet" href="file:///C:/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="file:///C:/" class="logo">Citizen AI</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="file:///C:/">Home</a></li>
+                        <li><a href="file:///C:/login">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <h2 style="text-align: center; color: #000000; margin-bottom: 2rem;">Create Your Account</h2>
+                
+                {% if error %}
+                <div class="alert alert-error">{{ error }}</div>
+                {% endif %}
+
+                <form method="post" action="file:///C:/register">
+                    <div class="form-group">
+                        <label for="full_name">Full Name:</label>
+                        <input type="text" id="full_name" name="full_name" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required="" minlength="8">
+                        <small style="color: #666;">Password must be at least 8 characters long</small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-full">Create Account</button>
+                </form>
+                
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <p>Already have an account? <a href="file:///C:/login" style="color: #667eea;">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Citizen AI. Empowering Indian Citizens with AI Technology.</p>
+        </div>
+    </footer>
+
+</body></html>

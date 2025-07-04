@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0235)file:///C:/Users/Ramya/AppData/Local/Temp/f69be1f8-5a35-4540-bee0-a1cb288c9312_Citizen-AI-Intelligent-Citizen-Engagement-Platform-main.zip.312/Citizen-AI-Intelligent-Citizen-Engagement-Platform-main/Project%20Files/templates/login.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Citizen AI</title>
+    <link rel="stylesheet" href="file:///C:/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="file:///C:/" class="logo">Citizen AI</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="file:///C:/">Home</a></li>
+                        <li><a href="file:///C:/register">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <h2 style="text-align: center; color: #000000; margin-bottom: 2rem;">Login to Citizen AI</h2>
+                
+                {% if message %}
+                <div class="alert alert-success">{{ message }}</div>
+                {% endif %}
+                
+                {% if error %}
+                <div class="alert alert-error">{{ error }}</div>
+                {% endif %}
+
+                <form method="post" action="file:///C:/login">
+                    <div class="form-group">
+                        <label for="username">Username or Email:</label>
+                        <input type="text" id="username" name="username" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required="">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-full">Login</button>
+                </form>
+                
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <p>Don't have an account? <a href="file:///C:/register" style="color: #1c3c6c81;">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Citizen AI. Empowering Indian Citizens with AI Technology.</p>
+        </div>
+    </footer>
+
+</body></html>
